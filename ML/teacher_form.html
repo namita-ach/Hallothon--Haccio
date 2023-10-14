@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+
+    <div>
+        <form action='/teacher_form' method="post">
+            <label for="topic">Topic:</label>
+            <select name="topic">
+                <option value="1">Photosynthesis</option>
+                <option value="2">Mitosis</option>
+                <option value="3">Meiosis</option>
+            </select>
+            <br><br>
+            <label for="mode_of_teaching">Mode of Teaching:</label>
+            <select name="mode_of_teaching">
+                <option value="1">Hands-on activity</option>
+                <option value="2">Lecture</option>
+                <option value="3">Discussion</option>
+                <option value="4">Video summaries</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div align="center">
+        <h4><b>{{ pred }}</b></h4>
+    </div>
+    
+</body>
+</html>
