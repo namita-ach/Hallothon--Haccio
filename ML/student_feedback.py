@@ -44,8 +44,8 @@ def update_online_model():
     effectiveness = int(request.form['effectiveness'])
 
     # Assuming your OnlineLinearRegression accepts 'topic' and 'mode_of_teaching' as x and 'effectiveness' as y
-    x = np.array([topic, mode_of_teaching])
-    y = effectiveness
+    x = np.array(row[[topic, mode_of_teaching]])
+    y = row[effectiveness]
     online_model.update(x, y)
     
     return 'Model Updated'
