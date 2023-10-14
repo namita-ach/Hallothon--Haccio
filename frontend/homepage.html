@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="homepage_style.css">
+    <title>TeachEase</title>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.481/build/spline-viewer.js"></script>
+    <spline-viewer loading-anim url="https://prod.spline.design/zb5eHfFFif7A1Pwn/scene.splinecode"></spline-viewer>
+
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button type="button" class="sidebar-burger" onclick="toggleSidebar()">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <img src="logo.png" alt="" class="sidebar-logo">
+            </header>
+
+            <nav class="sidebar-menu">
+                <button type="button">
+                    <i class='bx bx-home' ></i>
+                    <span>Home</span>
+                </button>
+                <button type="button" id="profile-button">
+                    <i class='bx bx-user' ></i>
+                    <span>Profile</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bx-cog' ></i>
+                    <span>Settings</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-heart'></i>
+                    <span>Connections</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-brain' ></i>
+                    <span>Mental Health</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-id-card' ></i>
+                    <span>Student Feedback</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-layer' ></i>
+                    <span>Lesson Plan</span>
+                </button>
+                
+            </nav>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+
+        document.getElementById("profile-button").addEventListener("click", function () {
+            window.location.href = "profile.html";
+        });
+    </script>
+</body>
+</html>
